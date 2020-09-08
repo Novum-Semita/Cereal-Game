@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Corn Country - Level 1 Loop.wav-f90119438920e95596bf9fe97ae48946.sample"
+
+[deps]
+
+source_file="res://Assets/Music/Corn Country - Level 1 Loop.wav"
+dest_files=[ "res://.import/Corn Country - Level 1 Loop.wav-f90119438920e95596bf9fe97ae48946.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

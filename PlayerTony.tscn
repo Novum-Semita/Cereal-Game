@@ -1,0 +1,46 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Assets/Players/Tony Idle_1.png" type="Texture" id=1]
+[ext_resource path="res://PlayerTony.gd" type="Script" id=2]
+[ext_resource path="res://Assets/SFX/Player Jump.wav" type="AudioStream" id=3]
+[ext_resource path="res://Assets/Players/Tony Run_2.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Players/Tony Run_1.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Players/Tony Run_3.png" type="Texture" id=6]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "Run",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+height = 12.7856
+
+[node name="PlayerTony" type="KinematicBody2D"]
+collision_mask = 62
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Run"
+speed_scale = 2.0
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 31.1, -10.2475 )
+scale = Vector2( 4, 5.25 )
+shape = SubResource( 2 )
+
+[node name="SoundJump" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
+volume_db = 10.0

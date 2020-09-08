@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Cereal Get.wav-42fb3f08e8abb658f37d92d94fe1c22b.sample"
+
+[deps]
+
+source_file="res://Assets/SFX/Cereal Get.wav"
+dest_files=[ "res://.import/Cereal Get.wav-42fb3f08e8abb658f37d92d94fe1c22b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
